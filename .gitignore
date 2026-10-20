@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+
+# build artifacts
+node_modules/
+*.tgz
+package-lock.json
+temp/
