@@ -1,0 +1,53 @@
+{
+  "name": "@barkermoney/skills",
+  "version": "0.7.1",
+  "description": "The official skill suite + stdio MCP server from Barker — Yield Primitive for the Agent Economy. Real-time stablecoin yield index + AI yield advisor + non-custodial execution + risk signals. Skill installer for Claude Code / OKX Plugin Store; live data is served to agents via the MCP at mcp.barker.money. Every agent touching stablecoins eventually plugs in.",
+  "keywords": [
+    "stablecoin",
+    "yield",
+    "yield-primitive",
+    "agent-economy",
+    "defi",
+    "apy",
+    "claude-code",
+    "claude-skill",
+    "mcp",
+    "mcp-server",
+    "agent",
+    "barker"
+  ],
+  "homepage": "https://barker.money",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barkermoney/barker-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barkermoney/barker-mcp/issues"
+  },
+  "license": "MIT",
+  "author": "Barker (https://barker.money)",
+  "bin": {
+    "skills": "./bin/cli.js",
+    "barker-skills": "./bin/cli.js",
+    "barker-mcp": "./bin/mcp-server.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "./build.sh",
+    "prepublishOnly": "./build.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
